@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.container .timer {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.container .controls {
+  display: flex;
+  gap: 10px;
+}
+
+.container .controls button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.container .controls button:hover {
+  background-color: #45a049;
+}
+
+.container .controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.container .controls button i {
+  margin-right: 5px;
+}
+
+.container .controls button#reset {
+  background-color: #f44336;
+}
+
+.container .controls button#reset:hover {
+  background-color: #e53935;
+}
+
+.container .controls button#start i,
+.container .controls button#pause i,
+.container .controls button#reset i {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.container .settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container .settings label {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.container .settings input {
+  width: 60px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.container .settings input[type=number] {
+  width: 80px;
+  text-align: center;
+}
+
+.container .setting-break {
+  margin-top: 10px;
+}
+
+.container .setting-work label {
+  margin-right: 15px;
+}
+
+.cycle-info {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.foot-text {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 20px;
+}
+
+.foot-link {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.foot-link:hover {
+  text-decoration: underline;
+}
