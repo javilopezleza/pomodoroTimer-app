@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temporizador Pomodoro</title>
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <h1>Temporizador Pomodoro</h1>
+        <h2>Aplicacion simple de un temporizador pomodoro</h2>
+
+        <div class="container">
+            <div class="timer">
+                <div class="time">
+                    <span id="minutes">
+                        00
+                    </span>
+                    <span>:</span>
+                    <span id="seconds">
+                        00
+                    </span>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start" title="Iniciar">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button id="reset" title="Reiniciar">
+                    <i class="fas fa-rotate-left"></i>
+                </button>
+            </div>
+
+            <div class="settings">
+                <div class="setting-work">
+                    <label for="work">Duración del Trabajo:</label>
+                    <input type="number" id="work" value="25" min="1" max="60">
+                </div>
+            </div>
+        </div>
+
+        <div class="cycle-info">
+            <p id="cycleDisplay">Ciclo: 0 / 4</p>
+        </div>
+
+        <footer class="foot-text">
+            <p>Hecho con ❤️ por
+                <a
+                    class="foot-link"
+                    href="https://javilolez-portfolio.netlify.app/index"
+                    target="_blank">Javilolez</a> &copy </p>
+        </footer>
+
+        <script src="js/apps.js"></script>
+    </body>
+</html>
